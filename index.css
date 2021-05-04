@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+    margin: 0;
+    background-color: whitesmoke;
+}
+h1{
+    font-size: 5vw;
+    font-family: 'Monoton', cursive;
+}
+p, ul, ol{
+    font-size: 2vw;
+    font-family: 'Antonio', sans-serif;
+}
+img{
+    width: 50vw;
+    border-radius: 50vw;
+}
+div{
+    display:flex;
+    align-items: center;
+    flex-direction:row;
+    text-align: center;
+    justify-content: space-around;
+}
+a{
+    width: 100%;
+    font-size: 20px;
+    padding: 16px 0px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Krona One', sans-serif;
+}
+a:hover{
+    background-color: lightgrey;
+    color: red;
+}
+.cover, .image_top, .image_slide{
+    flex-direction: column;
+}
+.nav{
+    justify-content: space-around;
+    background-color: grey;
+}
+.image_top > img, .image_top > p{
+    width: 33vw;
+    padding: 0px 16px;
+}
+.header > hr{
+    width: 33vw;
+}
+.side_img > p, .side_img > img{
+    padding: 0px 16px;
+}
+#front_img{
+    width: 33vw;
+}
+@media screen and (max-width: 800px){
+
+    .side_img{
+        flex-direction: column-reverse;
+    }
+    .image_top > img, .image_top > p{
+        width: 50vw;
+    }
+    h1{
+        font-size: 20px;
+    }
+    p, ul, ol{
+        font-size: 15px;
+    }
+    div{
+        flex-direction: column;
+    }
+}
